@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar nav-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mb-0 h1 navbar-dark bg-dark" href="#">
+                    <img src="images/todo.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top brandIMG">
+                    TO DO
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5 col-6">
+
+            <!--The input bar-->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Add your Task"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button id = "add_btn" class="btn btn-warning" id="basic-addon2">Add</span>
+            </div>
+
+            <!--The list items-->
+            <ul id = "ourList" class="list-group">
+                <!-- The code below is for default task which I dont need as of now, you can check by removing comments-->
+                <!-- <li class="list-group-item d-flex justify-content-between">
+                    <h5 class="flex-grow-1">An Item</h5>
+                    <button class="btn btn-danger mx-3" onclick="removeTask(this)"> Delete </button>
+                    <button id = "Donebtn" class="btn btn-success" onclick = "Done(this)">Done</button>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
